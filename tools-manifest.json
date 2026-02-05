@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-02-04T17:13:27.035615",
+  "toolCount": 6,
+  "tools": [
+    {
+      "id": "report_cleanup",
+      "name": "Report Cleanup",
+      "description": "Remove unused themes, visuals, images",
+      "icon": "report cleanup.svg",
+      "status": "stable",
+      "order": 1
+    },
+    {
+      "id": "pbip_layout_optimizer",
+      "name": "Layout Optimizer",
+      "description": "Model diagram positioning",
+      "icon": "layout optimizer.svg",
+      "status": "stable",
+      "order": 2
+    },
+    {
+      "id": "column_width",
+      "name": "Table Column Widths",
+      "description": "Standardize table/matrix columns",
+      "icon": "table column widths.svg",
+      "status": "stable",
+      "order": 3
+    },
+    {
+      "id": "advanced_copy",
+      "name": "Advanced Copy",
+      "description": "Page & bookmark copying",
+      "icon": "advanced copy.svg",
+      "status": "updated",
+      "order": 4
+    },
+    {
+      "id": "report_merger",
+      "name": "Report Merger",
+      "description": "Intelligent report consolidation",
+      "icon": "report merger.svg",
+      "status": "stable",
+      "order": 5
+    },
+    {
+      "id": "sensitivity_scanner",
+      "name": "Sensitivity Scanner",
+      "description": "PII & credential detection",
+      "icon": "sensivity scanner.svg",
+      "status": "stable",
+      "order": 6
+    }
+  ],
+  "downloadUrl": "https://github.com/analyticendeavors/pbi-multi-tool/releases/latest"
+}
