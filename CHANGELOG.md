@@ -4,6 +4,22 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 
 ---
 
+## [v2.1.0] - April 2026 - Field Parameters Edition
+
+### Added
+- **Field Parameters Tool** - Visual parameter creation and editing
+- **Multi-level categories** - Unlimited category hierarchies with custom column names
+- **Grouped view** - Collapsible category groups with drag-to-reorder
+- **Virtual scrolling** - Handles 500+ fields with smooth performance
+- **Category filtering** - Multi-select filter by category
+- **TMDL generation** - Real-time code preview with proper formatting
+- **Display name editing** - Double-click inline editing with bulk revert
+- **Lineage tag preservation** - Maintains IDs when editing existing parameters
+- **Category Manager panel** - Create, edit, and delete categories
+- **Bulk category assignment** - Table editor for all fields
+
+---
+
 ## [v2.0.0] - January 2026 - UI Redesign & Cleanup Edition
 
 ### Added
@@ -88,6 +104,6 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 
 ## Links
 
-- **GitHub**: [analyticendeavors/pbi-multi-tool](https://github.com/analyticendeavors/pbi-multi-tool)
+- **GitHub**: [AnalyticEndeavorsUser/pbi-multi-tool](https://github.com/AnalyticEndeavorsUser/pbi-multi-tool)
 - **Website**: [analyticendeavors.com](https://www.analyticendeavors.com)
 - **Support**: support@analyticendeavors.com

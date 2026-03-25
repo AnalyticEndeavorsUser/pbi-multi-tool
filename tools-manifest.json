@@ -1,7 +1,7 @@
 {
-  "version": "2.0.0",
-  "generatedAt": "2026-02-04T17:13:27.035615",
-  "toolCount": 6,
+  "version": "2.1.0",
+  "generatedAt": "2026-03-25T11:39:22.607100",
+  "toolCount": 7,
   "tools": [
     {
       "id": "report_cleanup",
@@ -32,7 +32,7 @@
       "name": "Advanced Copy",
       "description": "Page & bookmark copying",
       "icon": "advanced copy.svg",
-      "status": "updated",
+      "status": "stable",
       "order": 4
     },
     {
@@ -50,7 +50,15 @@
       "icon": "sensivity scanner.svg",
       "status": "stable",
       "order": 6
+    },
+    {
+      "id": "field_parameters",
+      "name": "Field Parameters",
+      "description": "Visual parameter builder",
+      "icon": "Field Parameter.svg",
+      "status": "stable",
+      "order": 7
     }
   ],
-  "downloadUrl": "https://github.com/analyticendeavors/pbi-multi-tool/releases/latest"
+  "downloadUrl": "https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/releases/latest"
 }

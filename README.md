@@ -2,7 +2,7 @@
 
 **Professional Power BI toolkit with plugin architecture for comprehensive report management**
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Version](https://img.shields.io/badge/version-2.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![Format](https://img.shields.io/badge/format-PBIP%20Only-orange)
@@ -69,6 +69,17 @@ The **AE Power BI Multi-Tool** is a professional desktop application suite that 
 - **Export reports** - Generates detailed findings reports for compliance/audit
 - **Category scanning** - Full scan or targeted scans (tables, RLS roles, expressions)
 - **Static analysis** - Analyzes model structure, not actual data values
+
+### **Field Parameters Tool** *New in v2.1.0*
+- **Visual parameter builder** - Drag-and-drop interface for creating Power BI Field Parameters
+- **Multi-level categories** - Unlimited category hierarchies with custom column names
+- **Grouped view** - Collapsible category groups with drag-to-reorder within groups
+- **Virtual scrolling** - Handles 500+ fields with smooth performance
+- **Category filtering** - Multi-select filter by category with expandable menu
+- **TMDL generation** - Real-time code preview with proper formatting
+- **Display name editing** - Double-click inline editing with bulk revert option
+- **Lineage tag preservation** - Maintains IDs when editing existing parameters
+- **Extra column preservation** - Keeps non-standard calculated columns intact
 
 ### **Table Column Widths Tool**
 - **Visual scanning and analysis** - Discovers all Table (tableEx) and Matrix (pivotTable) visuals in PBIP reports
@@ -221,15 +232,33 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 5. **Preview changes** to see calculated widths
 6. **Apply changes** for professional column standardization
 
+### **Field Parameters Tool** *New in v2.1.0*
+
+#### **Creating Field Parameters**
+1. **Connect** to a semantic model (External Tool or manual selection)
+2. **Choose mode**: "Create New" or "Edit Existing"
+3. **Add fields** from Available Fields panel (double-click or drag)
+4. **Set display names** (double-click to edit inline)
+5. **Create categories** using Category Manager panel
+6. **Assign fields** to categories via category dropdowns or table editor
+7. **Reorder** by dragging fields or groups
+8. **Copy TMDL** code to clipboard for Tabular Editor
+
+#### **Advanced Features**
+- **Grouped View**: Switch to "Grouped" mode to see fields organized by category
+- **Category Filtering**: Use filter dropdown to show only specific categories
+- **Bulk Category Assignment**: "Edit Categories" button opens table editor for all fields
+- **Virtual Scrolling**: Automatically enabled for 100+ fields
+
 ---
 
 ## Frequently Asked Questions
 
-### **Q: What's new in v2.0.0?**
-**A:** Version 2.0.0 introduces a comprehensive **UI redesign** with dark/light mode support, plus major **Report Cleanup enhancements**. Report Cleanup now includes **duplicate image detection** (MD5 hash-based with config dialog to select which to keep), **unused image cleanup** (finds unreferenced images including orphan files), and **saved scripts cleanup** (removes DAX queries and TMDL scripts). The **Layout Optimizer** now supports multi-diagram optimization with improved relationship-aware scoring.
+### **Q: What's new in v2.1.0?**
+**A:** Version 2.1.0 introduces the **Field Parameters Tool**, a comprehensive visual interface for creating and editing Power BI Field Parameters. Features include drag-and-drop field reordering, multi-level category hierarchies, grouped views with collapsible sections, virtual scrolling for 500+ fields, and real-time TMDL code generation.
 
-### **Q: What's new in v1.3.1?**
-**A:** Version 1.3.1 adds **Cross-Page Bookmark Mode** to the Bookmark + Visual Copy tool. This allows you to configure bookmarks to work across multiple pages without creating duplicates - perfect for multi-page popups and consistent navigation patterns.
+### **Q: What's new in v2.0.0?**
+**A:** Version 2.0.0 introduces a comprehensive **UI redesign** with dark/light mode support, plus major **Report Cleanup enhancements** including duplicate image detection, unused image cleanup, and saved scripts cleanup. The **Layout Optimizer** now supports multi-diagram optimization with improved relationship-aware scoring.
 
 ### **Q: What's the difference between page copying and bookmark/popup copying?**
 **A:** Page copying duplicates entire report pages with all their content, bookmarks, and actions. Bookmark/popup copying specifically targets bookmarks that have associated popup visuals, perfect for replicating interactive elements across reports without copying entire pages.
@@ -292,7 +321,7 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 
 ### **Getting Help**
 - **Documentation**: Check our [Wiki](../../wiki) for detailed tool guides
-- **Release Notes**: See [VERSION_2.0.0_RELEASE_NOTES.md](Release%20MDs/VERSION_2.0.0_RELEASE_NOTES.md) for latest updates
+- **Release Notes**: See [VERSION_2.1.0_RELEASE_NOTES.md](Release%20MDs/VERSION_2.1.0_RELEASE_NOTES.md) for latest updates
 - **Bug Reports**: Use [Issues](../../issues) to report problems
 - **Feature Requests**: Submit via [Issues](../../issues) with enhancement label
 - **Professional Support**: [Analytic Endeavors](https://www.analyticendeavors.com)
@@ -338,7 +367,14 @@ This software is released under the MIT License. See [LICENSE](LICENSE.txt) for 
 
 ## Version History
 
-### **v2.0.0 - UI Redesign & Cleanup Edition** *Current*
+### **v2.1.0 - Field Parameters Edition** *Current*
+- **NEW: Field Parameters Tool** - Visual parameter creation and editing
+- **Multi-level categories** - Unlimited hierarchy support
+- **Grouped view** - Collapsible category groups
+- **Virtual scrolling** - 500+ field performance
+- **TMDL generation** - Real-time code preview
+
+### **v2.0.0 - UI Redesign & Cleanup Edition**
 - **UI: Dark/Light Mode** - Full theme support
 - **UI: Sidebar Redesign** - Improved navigation
 - **UI: Consistent Theming** - Unified color system across all tools
