@@ -4,9 +4,27 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 
 ---
 
+## [v2.2.0] - May 2026 - Connection Hot Swap Edition
+
+### Added
+
+- **Connection Hot Swap Tool** - Dynamic connection switching for Power BI
+- **Cloud Workspace Browser** - OAuth-integrated dataset selection via MSAL
+- **Preset System** - Global and model-scoped configurations with storage locations
+- **Thin Report Support** - PBIP file modification (can modify while Desktop is open)
+- **Pro Workspace Perspectives** - Connect to perspectives in any workspace type
+- **Cloud-to-Cloud Swapping** - Switch between cloud datasets or connection types
+- **Persistent Cloud Schema Cache** - Connection schemas survive app restart
+- **Schema Mismatch Detection** - Warning dialog with update option
+- **Smart Local Model Matching** - Automatic discovery with fuzzy matching
+- **Safety Features** - Automatic backups, swap history, rollback on error
+
+---
+
 ## [v2.1.0] - April 2026 - Field Parameters Edition
 
 ### Added
+
 - **Field Parameters Tool** - Visual parameter creation and editing
 - **Multi-level categories** - Unlimited category hierarchies with custom column names
 - **Grouped view** - Collapsible category groups with drag-to-reorder
@@ -23,6 +41,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v2.0.0] - January 2026 - UI Redesign & Cleanup Edition
 
 ### Added
+
 - **Dark/Light Mode** - Full theme support across all tools
 - **Sidebar Navigation** - Redesigned for intuitive tool selection
 - **Duplicate Image Detection** - MD5 hash detection with config dialog to select keeper
@@ -31,6 +50,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 - **Multi-Diagram Optimization** - Optimize any saved diagram layout, not just default
 
 ### Changed
+
 - **UI Consistent Theming** - Unified color system via ThemeManager
 - **Layout Optimizer Scoring** - Relationship-aware 100-point scoring system with size-adjusted metrics
 
@@ -39,12 +59,14 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v1.3.1] - Cross-Page Bookmark Edition
 
 ### Added
+
 - **Cross-Page Bookmark Mode** - Configure bookmarks to work across multiple pages without duplication
 - **Cross-page UI indicator** - Link icon and page count display for cross-page bookmarks
 - **Hover tooltips** - Shows which pages a cross-page bookmark spans
 - **Bookmark navigator copying** - Navigators properly copied in cross-page mode
 
 ### Fixed
+
 - Cross-page bookmarks now work on target pages (visualContainerGroups)
 - Bookmarks no longer disappear after cross-page copy (comma-separated activeSection)
 
@@ -53,6 +75,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v1.3.0] - Cross-Page Bookmark Edition (Initial)
 
 ### Added
+
 - Initial cross-page bookmark functionality
 
 ---
@@ -60,6 +83,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v1.2.0] - Sensitivity Scanner Edition
 
 ### Added
+
 - **Sensitivity Scanner Tool** - Comprehensive TMDL scanning for sensitive data
 - **Pattern-based detection** - 50+ patterns for PII, credentials, financial data, infrastructure
 - **Rule Manager** - Visual pattern editor with Simple and Advanced modes
@@ -72,6 +96,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v1.1.1] - Advanced Copy Enhancement Edition
 
 ### Added
+
 - **Enhanced page copying** - Multi-page support within/across PBIPs
 - **Bookmark management** - Automatic bookmark and bookmark group duplication
 - **Bookmark + Popup Copier** - Copy bookmarks with associated popup visuals
@@ -82,6 +107,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v1.0.0] - Enhanced Report Cleanup Edition
 
 ### Added
+
 - **Enhanced Table Column Widths** - Fit to Totals defaults with intelligent width calculation
 - **Matrix optimization** - Hierarchy-aware spacing and improved compression
 
@@ -90,6 +116,7 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 ## [v0.0.0] - Beta Version
 
 ### Added
+
 - **Multi-tool suite** with plugin architecture
 - **Tool Manager** with automatic discovery
 - **Report Merger** with conflict resolution and theme management

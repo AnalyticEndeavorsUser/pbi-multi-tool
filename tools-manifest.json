@@ -1,7 +1,7 @@
 {
-  "version": "2.1.0",
-  "generatedAt": "2026-03-25T11:39:22.607100",
-  "toolCount": 7,
+  "version": "2.2.0",
+  "generatedAt": "2026-05-06T13:05:21.583184",
+  "toolCount": 8,
   "tools": [
     {
       "id": "report_cleanup",
@@ -58,6 +58,14 @@
       "icon": "Field Parameter.svg",
       "status": "stable",
       "order": 7
+    },
+    {
+      "id": "connection_hotswap",
+      "name": "Connection Hot-Swap",
+      "description": "Dynamic connection swapping",
+      "icon": "hotswap.svg",
+      "status": "stable",
+      "order": 8
     }
   ],
   "downloadUrl": "https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/releases/latest"
