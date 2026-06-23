@@ -4,6 +4,30 @@ All notable changes to AE Power BI Multi-Tool Suite are documented here.
 
 ---
 
+## [v2.3.0] - Accessibility Checker Edition
+
+### Added
+
+- **Accessibility Checker Tool** - WCAG compliance analyzer for Power BI reports
+- **Tab Order Analysis** - Keyboard navigation sequence validation
+- **Alt Text Validation** - Missing and generic alt text detection
+- **Color Contrast Analysis** - WCAG AA/AAA contrast checking with transparency handling
+- **Page Title Checks** - Generic page title detection
+- **Visual Title Checks** - Title presence and quality validation
+- **Bookmark Name Analysis** - Generic bookmark name flagging
+- **Hidden Page Warnings** - Accessibility considerations for hidden pages
+- **Export Reports** - JSON export for compliance documentation
+- **Severity Levels** - Error, Warning, Info classifications
+- **Visual Classification** - Automatic detection of 30+ visual types
+
+### Removed
+
+- **Table Column Widths Tool** - Removed from the suite. Power BI Desktop's native table
+  and matrix column auto-sizing now covers this functionality, making the dedicated tool
+  redundant.
+
+---
+
 ## [v2.2.0] - May 2026 - Connection Hot Swap Edition
 
 ### Added

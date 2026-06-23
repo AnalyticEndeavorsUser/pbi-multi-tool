@@ -2,7 +2,7 @@
 
 **Professional Power BI toolkit with plugin architecture for comprehensive report management**
 
-![Version](https://img.shields.io/badge/version-2.2.0-blue)
+![Version](https://img.shields.io/badge/version-2.3.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![Format](https://img.shields.io/badge/format-PBIP%20Only-orange)
@@ -11,7 +11,7 @@
 
 ## What is AE Power BI Multi-Tool?
 
-The **AE Power BI Multi-Tool** is a professional desktop application suite that provides 8 specialized tools for Power BI report management and optimization. Built with a modern plugin architecture, it automatically discovers and loads tools for comprehensive PBIP file manipulation.
+The **AE Power BI Multi-Tool** is a professional desktop application suite that provides multiple specialized tools for Power BI report management and optimization. Built with a modern plugin architecture, it automatically discovers and loads tools for comprehensive PBIP file manipulation.
 
 **Built by [Reid Havens](https://linkedin.com/in/reid-havens) of [Analytic Endeavors](https://www.analyticendeavors.com)**
 
@@ -75,18 +75,6 @@ The **AE Power BI Multi-Tool** is a professional desktop application suite that 
 - **Category scanning** - Full scan or targeted scans (tables, RLS roles, expressions)
 - **Static analysis** - Analyzes model structure, not actual data values
 
-### **Connection Hot-Swap Tool** _New in v2.2.0_
-
-- **Dynamic connection swapping** - Switch Power BI connections without republishing reports
-- **Multiple swap directions** - Cloud-to-local, local-to-cloud, or cloud-to-cloud swapping
-- **Composite model support** - Hot-swap while model is open in Desktop (TOM-based)
-- **Thin report support** - File-based swapping via PBIP format modification
-- **Universal perspective support** - Connect to perspectives in ANY workspace (Pro, Premium, PPU, Fabric)
-- **Cloud workspace browser** - Browse all accessible workspaces with OAuth authentication
-- **Smart local matching** - Auto-detect and match open Power BI Desktop instances
-- **Preset system** - Save and reuse connection configurations (Global or Model-scoped)
-- **Safety features** - Automatic backups, rollback capability, and schema validation
-
 ### **Field Parameters Tool** _New in v2.1.0_
 
 - **Visual parameter builder** - Drag-and-drop interface for creating Power BI Field Parameters
@@ -99,16 +87,29 @@ The **AE Power BI Multi-Tool** is a professional desktop application suite that 
 - **Lineage tag preservation** - Maintains IDs when editing existing parameters
 - **Extra column preservation** - Keeps non-standard calculated columns intact
 
-### **Table Column Widths Tool**
+### **Connection Hot-Swap Tool** _New in v2.2.0_
 
-- **Visual scanning and analysis** - Discovers all Table (tableEx) and Matrix (pivotTable) visuals in PBIP reports
-- **Field categorization** - Automatically identifies categorical fields vs measures from visual configurations
-- **Width preset options** - Narrow, Medium, Wide, Auto-fit, Fit to Totals, and Custom width settings
-- **Auto-fit calculations** - Font-aware width calculations based on actual text length and visual font settings
-- **Fit to Totals optimization** - Specialized sizing for measures to prevent total/subtotal value wrapping
-- **Enhanced matrix handling** - Hierarchy-aware spacing for Compact, Outline, and Tabular matrix layouts
-- **Content-type detection** - Intelligent recognition of dates, currency, hierarchy levels, and data patterns
-- **Selective application** - Choose individual visuals, multiple visuals, or apply to all tables/matrices
+- **Dynamic connection swapping** - Switch Power BI connections without republishing reports
+- **Multiple swap directions** - Cloud-to-local, local-to-cloud, or cloud-to-cloud swapping
+- **Composite model support** - Hot-swap while model is open in Desktop (TOM-based)
+- **Thin report support** - File-based swapping via PBIP format modification
+- **Universal perspective support** - Connect to perspectives in ANY workspace (Pro, Premium, PPU, Fabric)
+- **Cloud workspace browser** - Browse all accessible workspaces with OAuth authentication
+- **Smart local matching** - Auto-detect and match open Power BI Desktop instances
+- **Preset system** - Save and reuse connection configurations (Global or Model-scoped)
+- **Safety features** - Automatic backups, rollback capability, and schema validation
+
+### **Accessibility Checker Tool** _New in v2.3.0_
+
+- **Tab order analysis** - Validates keyboard navigation sequence (WCAG 2.4.3)
+- **Alt text validation** - Detects missing or generic alt text on visuals (WCAG 1.1.1)
+- **Color contrast analysis** - WCAG AA/AAA compliance checking with transparency handling (WCAG 1.4.3/1.4.6)
+- **Page title checks** - Identifies generic or missing page titles (WCAG 2.4.2)
+- **Visual title validation** - Checks for descriptive visual titles
+- **Bookmark name analysis** - Flags generic bookmark names
+- **Hidden page warnings** - Alerts for accessibility considerations on hidden pages
+- **Severity levels** - ERROR, WARNING, INFO categorization
+- **Export reports** - JSON export for compliance documentation
 
 ---
 
@@ -122,14 +123,6 @@ The **AE Power BI Multi-Tool** is a professional desktop application suite that 
 - **Cross-PBIP intelligence** - Seamlessly handles dependencies when copying between reports
 - **Cross-page bookmark mode** - Configure single bookmarks to control visuals on multiple pages _New_
 - **Visual bookmark indicators** - Link icons and tooltips distinguish cross-page bookmarks _New_
-
-### **Advanced Matrix Handling**
-
-- **Hierarchy-aware compression** (parent levels keep full width)
-- **Layout-specific optimizations** (Compact vs Outline matrices)
-- **Enhanced minimum widths** based on content and visual type
-- **Currency-specific adjustments** for better readability
-- **Date format intelligence** with complex pattern recognition
 
 ### **Enterprise-Grade Security**
 
@@ -182,7 +175,7 @@ This tool suite **ONLY** works with **PBIP files** in the enhanced report format
 
 ### **Option 1: Standalone Application (GitHub Releases)**
 
-1. **Download** `AE Power BI Multi-Tool.exe` from the [Releases page](https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/releases)
+1. **Download** `AE Power BI Multi-Tool.exe` from the [Releases page](../../releases)
 2. **Run directly** - no installation required
 3. **Launch** and select your tool from the tabbed interface
 
@@ -257,18 +250,6 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 4. **Execute** cleanup with backup creation
 5. **Verify** optimized report performance
 
-### **Table Column Widths Tool** _Enhanced Edition_
-
-1. **Select** PBIP file containing tables/matrices
-2. **Scan visuals** to discover all table and matrix elements
-3. **Set width preferences** (smart defaults):
-   - **Categorical columns**: Auto-fit (intelligent width calculation)
-   - **Measure columns**: Fit to Totals (prevents wrapping, default)
-   - **Custom options**: Narrow/Medium/Wide presets or exact pixel values
-4. **Select visuals** to update (tables, matrices, or both)
-5. **Preview changes** to see calculated widths
-6. **Apply changes** for professional column standardization
-
 ### **Connection Hot-Swap Tool** _New in v2.2.0_
 
 #### **Swapping Composite Model Connections (TOM-based)**
@@ -292,13 +273,6 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 6. **Swap to Cloud** - exact original connection restored from cache
 7. **Note**: All thin reports require reload; PBIP allows file edit while open, PBIX requires closing first
 
-#### **Key Features**
-
-- **Pro Workspace Perspectives**: Connect to perspectives in Pro workspaces (not just Premium/PPU)
-- **Cloud-to-Cloud**: Switch between different cloud datasets or workspaces
-- **Presets**: Save configurations as Global (any model) or Model-specific presets
-- **APPLY TARGET**: Quickly restore original connection after testing
-
 ### **Field Parameters Tool** _New in v2.1.0_
 
 #### **Creating Field Parameters**
@@ -319,9 +293,42 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 - **Bulk Category Assignment**: "Edit Categories" button opens table editor for all fields
 - **Virtual Scrolling**: Automatically enabled for 100+ fields
 
+### **Accessibility Checker Tool** _New in v2.3.0_
+
+#### **Running Accessibility Analysis**
+
+1. **Open** the Multi-Tool and select Accessibility Checker
+2. **Select** your PBIP report file
+3. **Configure** which checks to run (all enabled by default)
+4. **Analyze** - tool scans all pages and visuals
+5. **Review** issues by severity, type, or page
+6. **Export** report for compliance documentation
+
+#### **Check Types**
+
+| Check          | WCAG Reference | Description                  |
+| -------------- | -------------- | ---------------------------- |
+| Tab Order      | 2.4.3          | Keyboard navigation sequence |
+| Alt Text       | 1.1.1          | Visual accessibility text    |
+| Color Contrast | 1.4.3/1.4.6    | Text readability (AA/AAA)    |
+| Page Titles    | 2.4.2          | Descriptive page names       |
+| Visual Titles  | Best Practice  | Title presence and quality   |
+| Bookmark Names | Best Practice  | Meaningful bookmark names    |
+| Hidden Pages   | Best Practice  | Hidden page accessibility    |
+
+#### **Interpreting Results**
+
+- **Red (ERROR)** - Must fix for WCAG compliance
+- **Yellow (WARNING)** - Should fix for better accessibility
+- **Blue (INFO)** - Suggestions for improvement
+
 ---
 
 ## Frequently Asked Questions
+
+### **Q: What's new in v2.3.0?**
+
+**A:** Version 2.3.0 introduces the **Accessibility Checker Tool**, a comprehensive WCAG compliance analyzer for Power BI reports. Features include tab order validation, alt text checking, color contrast analysis (AA/AAA levels), page title verification, visual title checks, bookmark name analysis, and hidden page warnings with exportable compliance reports.
 
 ### **Q: What's new in v2.2.0?**
 
@@ -333,7 +340,7 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 
 ### **Q: What's new in v2.0.0?**
 
-**A:** Version 2.0.0 introduces a comprehensive **UI redesign** with dark/light mode support, plus major **Report Cleanup enhancements** including duplicate image detection, unused image cleanup, and saved scripts cleanup. The **Layout Optimizer** now supports multi-diagram optimization with improved relationship-aware scoring.
+**A:** Version 2.0.0 introduces a comprehensive **UI redesign** with dark/light mode support, plus major **Report Cleanup enhancements** including duplicate image detection, unused image cleanup, and saved scripts cleanup.
 
 ### **Q: What's the difference between page copying and bookmark/popup copying?**
 
@@ -355,10 +362,6 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 
 **A:** Only PBIP files in enhanced report format (PBIR). Traditional .pbix files are NOT supported by any tool in the suite.
 
-### **Q: How do I get the best results from Table Column Widths?**
-
-**A:** Use the default settings (Auto-fit for categorical, Fit to Totals for measures) for the most intelligent width calculations with optimal total display.
-
 ---
 
 ## Troubleshooting
@@ -370,12 +373,6 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 - Ensure you're using .pbip files (not .pbix)
 - Enable PBIR format in Power BI Desktop settings
 - Verify .Report folders exist alongside .pbip files
-
-**"No visuals found" in Table Column Widths**
-
-- Tool only works with Table and Matrix visuals
-- Ensure your report contains tableEx or pivotTable visual types
-- Check that visuals have proper field configurations
 
 **"Bookmark references broken" after copying**
 
@@ -407,10 +404,10 @@ For the installer that integrates with Power BI Desktop's External Tools ribbon:
 
 ### **Getting Help**
 
-- **Documentation**: Check our [Wiki](https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/wiki) for detailed tool guides
-- **Release Notes**: See [VERSION_2.2.0_RELEASE_NOTES.md](Release%20MDs/VERSION_2.2.0_RELEASE_NOTES.md) for latest updates
-- **Bug Reports**: Use [Issues](https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/issues) to report problems
-- **Feature Requests**: Submit via [Issues](https://github.com/AnalyticEndeavorsUser/pbi-multi-tool/issues) with enhancement label
+- **Documentation**: Check our [Wiki](../../wiki) for detailed tool guides
+- **Release Notes**: See [VERSION_2.3.0_RELEASE_NOTES.md](Release%20MDs/VERSION_2.3.0_RELEASE_NOTES.md) for latest updates
+- **Bug Reports**: Use [Issues](../../issues) to report problems
+- **Feature Requests**: Submit via [Issues](../../issues) with enhancement label
 - **Professional Support**: [Analytic Endeavors](https://www.analyticendeavors.com)
 - **Direct Contact**: support@analyticendeavors.com
 
@@ -458,7 +455,19 @@ This software is released under the MIT License. See [LICENSE](LICENSE.txt) for 
 
 ## Version History
 
-### **v2.2.0 - Connection Hot Swap Edition** _Current_
+### **v2.3.0 - Accessibility Checker Edition** _Current_
+
+- **NEW: Accessibility Checker Tool** - WCAG compliance analyzer
+- **Tab Order Analysis** - Keyboard navigation validation
+- **Alt Text Validation** - Missing and generic alt text detection
+- **Color Contrast Analysis** - WCAG AA/AAA contrast checking
+- **Page Title Checks** - Generic page title detection
+- **Visual Title Checks** - Title presence and quality validation
+- **Bookmark Name Analysis** - Generic bookmark name flagging
+- **Export Reports** - JSON export for compliance documentation
+- **REMOVED: Table Column Widths Tool** - Power BI Desktop's native table/matrix column auto-sizing now covers this, making the dedicated tool redundant
+
+### **v2.2.0 - Connection Hot Swap Edition**
 
 - **NEW: Connection Hot-Swap Tool** - Dynamic connection swapping for Power BI
 - **NEW: Cloud Workspace Browser** - OAuth-integrated dataset selection
@@ -491,35 +500,25 @@ This software is released under the MIT License. See [LICENSE](LICENSE.txt) for 
 - **NEW: Cross-Page Bookmark Mode** - Configure bookmarks to work across multiple pages without duplication
 - **Cross-page UI indicator** - Link icon and page count display for cross-page bookmarks
 - **Hover tooltips** - Shows which pages a cross-page bookmark spans
-- **Bookmark navigator copying** - Navigators properly copied in cross-page mode
 
 ### **v1.2.0 - Sensitivity Scanner Edition**
 
 - **NEW: Sensitivity Scanner Tool** - Comprehensive TMDL scanning for sensitive data
 - **Pattern-based detection** - 50+ patterns for PII, credentials, financial data, infrastructure
-- **Rule Manager** - Visual pattern editor with Simple and Advanced modes
 
 ### **v1.1.1 - Advanced Copy Enhancement Edition**
 
 - **Enhanced page copying** - Multi-page support within/across PBIPs
-- **Bookmark management** - Automatic bookmark and bookmark group duplication
 - **NEW: Bookmark + Popup Copier** - Copy bookmarks with associated popup visuals
 
 ### **v1.0.0 - Enhanced Report Cleanup Edition**
 
 - **Enhanced Table Column Widths** - Fit to Totals defaults with intelligent width calculation
-- **Matrix optimization** - Hierarchy-aware spacing and improved compression
 
 ### **v0.0.0 - Beta Version**
 
 - **Multi-tool suite** with plugin architecture
 - **Tool Manager** with automatic discovery
-- **Layout Optimizer** with middle-out positioning
-- **Advanced Page Copy** with dependency tracking
-- **Enhanced Report Merger** with improved conflict resolution
-- **Report Cleanup** tool for optimization
-- **Security-enhanced** architecture throughout
-- **Professional UI** with context-sensitive help
 
 ---
 

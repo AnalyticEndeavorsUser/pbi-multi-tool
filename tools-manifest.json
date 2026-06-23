@@ -1,6 +1,6 @@
 {
-  "version": "2.2.0",
-  "generatedAt": "2026-05-06T13:05:21.583184",
+  "version": "2.4.0",
+  "generatedAt": "2026-06-19T00:00:00.000000",
   "toolCount": 8,
   "tools": [
     {
@@ -20,20 +20,12 @@
       "order": 2
     },
     {
-      "id": "column_width",
-      "name": "Table Column Widths",
-      "description": "Standardize table/matrix columns",
-      "icon": "table column widths.svg",
-      "status": "stable",
-      "order": 3
-    },
-    {
       "id": "advanced_copy",
       "name": "Advanced Copy",
       "description": "Page & bookmark copying",
       "icon": "advanced copy.svg",
       "status": "stable",
-      "order": 4
+      "order": 3
     },
     {
       "id": "report_merger",
@@ -41,7 +33,7 @@
       "description": "Intelligent report consolidation",
       "icon": "report merger.svg",
       "status": "stable",
-      "order": 5
+      "order": 4
     },
     {
       "id": "sensitivity_scanner",
@@ -49,7 +41,7 @@
       "description": "PII & credential detection",
       "icon": "sensivity scanner.svg",
       "status": "stable",
-      "order": 6
+      "order": 5
     },
     {
       "id": "field_parameters",
@@ -57,13 +49,21 @@
       "description": "Visual parameter builder",
       "icon": "Field Parameter.svg",
       "status": "stable",
-      "order": 7
+      "order": 6
     },
     {
       "id": "connection_hotswap",
       "name": "Connection Hot-Swap",
       "description": "Dynamic connection swapping",
       "icon": "hotswap.svg",
+      "status": "stable",
+      "order": 7
+    },
+    {
+      "id": "accessibility_checker",
+      "name": "Accessibility Checker",
+      "description": "WCAG compliance analysis",
+      "icon": null,
       "status": "stable",
       "order": 8
     }
