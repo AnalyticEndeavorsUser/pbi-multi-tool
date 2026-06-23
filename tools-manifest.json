@@ -1,6 +1,11 @@
 {
+<<<<<<< Updated upstream
   "version": "2.4.0",
   "generatedAt": "2026-06-19T00:00:00.000000",
+=======
+  "version": "2.3.0",
+  "generatedAt": "2026-06-23T11:52:03.276435",
+>>>>>>> Stashed changes
   "toolCount": 8,
   "tools": [
     {
